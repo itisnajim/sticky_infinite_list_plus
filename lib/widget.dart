@@ -232,6 +232,9 @@ class InfiniteList extends StatefulWidget {
   /// Slivers before the list
   final List<Widget> sliversBefore;
 
+  /// List padding, see [EdgeInsets] for more info
+  final EdgeInsets? listPadding;
+
   final Key? _centerKey;
 
   InfiniteList({
@@ -247,6 +250,7 @@ class InfiniteList extends StatefulWidget {
     this.scrollDirection = Axis.vertical,
     this.physics,
     this.sliversBefore = const [],
+    this.listPadding,
   })  : _centerKey = (direction == InfiniteListDirection.multi)
             ? const ValueKey<String>('center-key')
             : null,
@@ -283,18 +287,33 @@ class _InfiniteListState extends State<InfiniteList> {
         listItem: widget.builder(context, index),
       );
 
-  List<SliverList> get _slivers {
+  List<Widget> get _slivers {
     switch (widget.direction) {
       case InfiniteListDirection.multi:
         return [
-          _reverseList,
-          _forwardList,
+          widget.listPadding == null
+              ? _reverseList
+              : SliverPadding(
+                  sliver: _reverseList,
+                  padding: widget.listPadding!,
+                ),
+          widget.listPadding == null
+              ? _forwardList
+              : SliverPadding(
+                  sliver: _forwardList,
+                  padding: widget.listPadding!,
+                ),
         ];
 
       case InfiniteListDirection.single:
       default:
         return [
-          _forwardList,
+          widget.listPadding == null
+              ? _forwardList
+              : SliverPadding(
+                  sliver: _forwardList,
+                  padding: widget.listPadding!,
+                ),
         ];
     }
   }
