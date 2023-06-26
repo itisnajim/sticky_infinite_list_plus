@@ -238,6 +238,8 @@ class InfiniteList extends StatefulWidget {
   /// List padding, see [EdgeInsets] for more info
   final EdgeInsets? listPadding;
 
+  final bool shrinkWrap;
+
   final Key? _centerKey;
 
   InfiniteList({
@@ -255,6 +257,7 @@ class InfiniteList extends StatefulWidget {
     this.sliversBefore = const [],
     this.sliversAfter = const [],
     this.listPadding,
+    this.shrinkWrap = false,
   })  : _centerKey = (direction == InfiniteListDirection.multi)
             ? const ValueKey<String>('center-key')
             : null,
@@ -330,12 +333,13 @@ class _InfiniteListState extends State<InfiniteList> {
           ...widget.sliversBefore,
           ..._slivers,
           ...widget.sliversAfter,
-    ],
+        ],
         reverse: widget.reverse,
         anchor: widget.anchor,
         cacheExtent: widget.cacheExtent,
         scrollDirection: widget.scrollDirection,
         physics: widget.physics,
+        shrinkWrap: widget.shrinkWrap,
       );
 
   @override
@@ -478,7 +482,7 @@ class StickyListItem<I> extends Stack {
     this.mainAxisAlignment = HeaderMainAxisAlignment.start,
     this.crossAxisAlignment = HeaderCrossAxisAlignment.start,
     this.positionAxis = HeaderPositionAxis.mainAxis,
-    Clip clipBehavior: Clip.hardEdge,
+    Clip clipBehavior = Clip.hardEdge,
     Key? key,
   })  : overlayContent = false,
         assert(
@@ -502,7 +506,7 @@ class StickyListItem<I> extends Stack {
     this.streamSink,
     this.mainAxisAlignment = HeaderMainAxisAlignment.start,
     this.crossAxisAlignment = HeaderCrossAxisAlignment.start,
-    Clip clipBehavior: Clip.hardEdge,
+    Clip clipBehavior = Clip.hardEdge,
     Key? key,
   })  : overlayContent = true,
         positionAxis = HeaderPositionAxis.mainAxis,

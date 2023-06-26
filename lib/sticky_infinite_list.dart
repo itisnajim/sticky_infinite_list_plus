@@ -1,4 +1,4 @@
-library sticky_infinite_list;
+library sticky_infinite_list_plus;
 
 export './widget.dart';
 export './render.dart';

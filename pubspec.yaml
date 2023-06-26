@@ -1,14 +1,14 @@
-name: sticky_infinite_list
+name: sticky_infinite_list_plus
 description: >-
   Infinite list with sticky headers that can be rendered any direction.
   Supports header positioning.
 
   Can be customized or with config options or with override.
 
-version: 4.0.1
-homepage: https://github.com/TatsuUkraine/flutter_sticky_infinite_list
-repository: https://github.com/TatsuUkraine/flutter_sticky_infinite_list
-issue_tracker: https://github.com/TatsuUkraine/flutter_sticky_infinite_list/issues
+version: 4.0.2
+homepage: https://github.com/itisnajim/sticky_infinite_list_plus
+repository: https://github.com/itisnajim/sticky_infinite_list_plus
+issue_tracker: https://github.com/itisnajim/sticky_infinite_list_plus/issues
 
 environment:
   sdk: '>=2.12.0 <3.0.0'

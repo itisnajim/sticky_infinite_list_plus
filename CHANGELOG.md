@@ -1,3 +1,9 @@
+## [4.0.2]
+
+- Added the `shrinkWrap` property to the `InfiniteList` widget.
+- Added the `sliversBefore` property to the `InfiniteList` widget, allowing additional slivers to be placed before the list.
+- Added the `sliversAfter` property to the `InfiniteList` widget, allowing additional slivers to be placed after the list.
+
 ## [4.0.1] - 2021-04-19
 
 - implement missing dry layout calculation

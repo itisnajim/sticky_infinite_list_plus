@@ -1,6 +1,6 @@
 # Sticky Infinite List
 
-[![pub package](https://img.shields.io/pub/v/sticky_infinite_list.svg)](https://pub.dartlang.org/packages/sticky_infinite_list)
+[![pub package](https://img.shields.io/pub/v/sticky_infinite_list_plus.svg)](https://pub.dartlang.org/packages/sticky_infinite_list_plus)
 <a href="https://github.com/Solido/awesome-flutter">
    <img alt="Awesome Flutter" src="https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square" />
 </a>
@@ -105,7 +105,7 @@ class Example extends StatelessWidget {
 Or with header overlay content
 ```dart
 
-import 'package:sticky_infinite_list/sticky_infinite_list.dart';
+import 'package:sticky_infinite_list_plus/sticky_infinite_list_plus.dart';
 
 class Example extends StatelessWidget {
   
@@ -342,7 +342,7 @@ bottom and positive list won't render anything.
 Additionally you can specify header alignment to any side.
 
 ```dart
-import 'package:sticky_infinite_list/sticky_infinite_list.dart';
+import 'package:sticky_infinite_list_plus/sticky_infinite_list_plus.dart';
 
 class Example extends StatelessWidget {
   
@@ -580,11 +580,11 @@ in [Example project](https://github.com/TatsuUkraine/flutter_sticky_infinite_lis
 
 ## Changelog
 
-Please see the [Changelog](https://github.com/TatsuUkraine/flutter_sticky_infinite_list/blob/master/CHANGELOG.md) page to know what's recently changed.
+Please see the [Changelog](https://github.com/itisnajim/sticky_infinite_list_plus/blob/master/CHANGELOG.md) page to know what's recently changed.
 
 ## Bugs/Requests
 
-If you encounter any problems feel free to open an [issue](https://github.com/TatsuUkraine/flutter_sticky_infinite_list/issues).
+If you encounter any problems feel free to open an [issue](https://github.com/itisnajim/sticky_infinite_list_plus/issues).
 If you feel the library is missing a feature,
 please raise a ticket on Github and I'll look into it.
 Pull request are also welcome.
