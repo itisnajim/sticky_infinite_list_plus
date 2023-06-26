@@ -1,3 +1,7 @@
+## [4.0.2+2]
+
+- Update `README.md`.
+
 ## [4.0.2]
 
 - Added the `shrinkWrap` property to the `InfiniteList` widget.

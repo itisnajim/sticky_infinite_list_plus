@@ -1,4 +1,4 @@
-# Sticky Infinite List
+# Sticky Infinite List Plus
 
 [![pub package](https://img.shields.io/pub/v/sticky_infinite_list_plus.svg)](https://pub.dartlang.org/packages/sticky_infinite_list_plus)
 <a href="https://github.com/Solido/awesome-flutter">
@@ -39,7 +39,7 @@ If you're using Flutter version lower than 1.20 consider using v2.x.x.
 ## Migration guide
 
 If you using older MAJOR versions, please
-[visit this migration guide](https://github.com/TatsuUkraine/flutter_sticky_infinite_list/blob/master/MIGRATION.md)
+[visit this migration guide](https://github.com/itisnajim/sticky_infinite_list_plus/blob/master/MIGRATION.md)
 
 ### Property not defined
 
@@ -56,7 +56,7 @@ Install package and import
 
 ```dart
 
-import 'package:sticky_infinite_list/sticky_infinite_list.dart';
+import 'package:sticky_infinite_list_plus/sticky_infinite_list_plus.dart';
 ```
 
 Package exposes `InfiniteList`, `InfiniteListItem`, `StickyListItem`,
@@ -73,7 +73,7 @@ No need to specify any additional config to make it work
 
 ```dart
 
-import 'package:sticky_infinite_list/sticky_infinite_list.dart';
+import 'package:sticky_infinite_list_plus/sticky_infinite_list_plus.dart';
 
 class Example extends StatelessWidget {
   
